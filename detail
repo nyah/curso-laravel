@@ -12,7 +12,7 @@ Route::get('user/profile', [
 
 Crear controlador
 4.
-php make:controller UserController
+php artisan make:controller UserController
 
 Instalar paquete para trabajar con html
 5.
