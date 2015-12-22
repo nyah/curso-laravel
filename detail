@@ -1,1 +1,38 @@
 1. Introducción y objetivo del curso
+2. Instalación, entornos y rutas en Laravel
+****************
+1. Instalamos composer
+2. Creamos nuestro proyecto composer create-project laravel/laravel --prefer-dist blog
+Crear rutas
+3.
+
+Route::get('user/profile', [
+    'as' => 'profile', 'uses' => 'UserController@showProfile'
+]);
+
+Crear controlador
+4.
+php make:controller UserController
+
+Instalar paquete para trabajar con html
+5.
+https://laravelcollective.com/docs/5.1/html
+Agregamos en composer.json
+"laravelcollective/html": "5.1.*"
+
+y luego hacemos composer update
+
+Instalamos vardebug
+6.
+
+https://github.com/barryvdh/laravel-debugbar
+luego agregamos en .json
+"barryvdh/laravel-debugbar": "1.8.*"
+ahora hacemos composer update
+una vez que hicimos lo anterior
+
+Luego vamos a config /app.php
+
+ver mas paquetes
+7.
+http://packalyst.com/
